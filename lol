@@ -1,10 +1,10 @@
 getgenv().Settings = {
     Operator = {4214044480},
-    Prefix = "?",
+    Prefix = ".",
     AdMsg = "fikop alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 4,
-    BlackScreen = true,
+    FPS_CAP = 60,
+    BlackScreen = false,
     WebhookURL = "",
 }
 getgenv().Alts = {2310126993}
