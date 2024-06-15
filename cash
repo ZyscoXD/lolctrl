@@ -363,6 +363,7 @@ local function cmds(msg,plr)
                     })
                 end)
                 saymsg("Sent!")
+                end
             end            
         msg = string.split(msg," ")
         msg[1] = string.lower(msg[1])
