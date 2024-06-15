@@ -1,0 +1,74 @@
+local function GetDropped()
+    local totalMoney = 0
+    for _, moneyDrop in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+        if moneyDrop.Name == "MoneyDrop" and moneyDrop:IsA("Part") then
+            local billboardGui = moneyDrop:FindFirstChild("BillboardGui")
+            if billboardGui then
+                local textLabel = billboardGui:FindFirstChild("TextLabel")
+                if textLabel then
+                    local moneyText = textLabel.Text
+                    if moneyText then
+                        moneyText = moneyText:gsub(",", "")
+                        moneyText = moneyText:gsub("%$", "")
+                        totalMoney = totalMoney + tonumber(moneyText)
+                    end
+                end
+            end
+        end
+    end
+    return totalMoney
+end
+
+-- Variables
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- Create a ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "MoneyDisplayGui"
+screenGui.Parent = playerGui
+
+-- Create a CashCounter Frame
+local cashCounter = Instance.new("Frame")
+cashCounter.Name = "CashCounter"
+cashCounter.Parent = screenGui
+cashCounter.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+cashCounter.BackgroundTransparency = 0.200
+cashCounter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cashCounter.BorderSizePixel = 0
+cashCounter.Position = UDim2.new(0.5, -128, 0.9, -100)  -- Adjusted position
+cashCounter.Size = UDim2.new(0, 250, 0, 75)  -- Adjusted size
+
+-- Create a MoneyCounter TextLabel inside CashCounter
+local moneyCounter = Instance.new("TextLabel")
+moneyCounter.Name = "MoneyCounter"
+moneyCounter.Parent = cashCounter
+moneyCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+moneyCounter.BackgroundTransparency = 1
+moneyCounter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+moneyCounter.BorderSizePixel = 0
+moneyCounter.Position = UDim2.new(0, 0, 0, 0)  -- Updated position to top-left corner of CashCounter
+moneyCounter.Size = UDim2.new(1, 0, 1, 0)  -- Updated size to fill CashCounter
+moneyCounter.Font = Enum.Font.Highway
+moneyCounter.Text = "999,999,999"
+moneyCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
+moneyCounter.TextSize = 39.000
+moneyCounter.TextWrapped = true
+
+-- Create a UICorner for CashCounter
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0, 5)
+uiCorner.Parent = cashCounter
+
+-- Function to update the MoneyCounter TextLabel
+local function updateMoneyDisplay()
+    local totalMoney = GetDropped()
+    moneyCounter.Text = "$" .. tostring(totalMoney)
+end
+
+-- Update the display initially and then every 0.2 seconds
+updateMoneyDisplay()
+while true do
+    wait(0.2)
+    updateMoneyDisplay()
+end
