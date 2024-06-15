@@ -1,18 +1,18 @@
 getgenv().Settings = {
-    Operator = {4214044480},
-    Prefix = ".",
+    Operator = {4992163150},
+    Prefix = "?",
     AdMsg = "fikop alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 60,
-    BlackScreen = false,
-    WebhookURL = "",
+    FPS_CAP = 30,
+    BlackScreen = true,
+    WebhookURL = "https://discord.com/api/webhooks/1251409110663168000/sXf63m_lfSY8ry2HbsAdjzakXw4geG4heNbIvXt34Z210QQdZRWOHxapmZj3Ng2aOmq1",
 }
 getgenv().Alts = {2310126993}
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 if Settings['advertisement'] then
-    game.Players.LocalPlayer:Kick("\nNew Script has been added!\n\nHey, "..game.Players.LocalPlayer.Name.." there is a new script in encrypt for this alt control. Please join discord.gg/encrypt to get the new script, all whitelists are the same.")
+    game.Players.LocalPlayer:Kick("gay")
 end
 game.Players.LocalPlayer.Idled:Connect(function()
     game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
@@ -27,8 +27,6 @@ local player = game.Players.LocalPlayer
 if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],player.UserId) then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
     local ScreenGui = Instance.new("ScreenGui")
-    local LocalPlayer = Players.LocalPlayer
-    local Players = game:GetService("Players")
     local Frame = Instance.new("Frame")
     local TextLabel = Instance.new("TextLabel")
     local TextLabel_2 = Instance.new("TextLabel")
@@ -48,17 +46,17 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel.Parent = Frame
     TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.BackgroundTransparency = 1.000
-    TextLabel.Position = UDim2.new(0.437655866, 0, 0.201503754, 0)
+    TextLabel.Position = UDim2.new(0.437655866, 0, 0.301503754, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.GothamSemibold
-    TextLabel.Text = "Encrypt Alt Control Revamped"
+    TextLabel.Text = "im gay zysco daddy ahhh"
     TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.TextSize = 55.000
 
     TextLabel_2.Parent = Frame
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
-    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.317293257, 0)
+    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.357293257, 0)
     TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_2.Font = Enum.Font.GothamSemibold
     TextLabel_2.Text = "Name"
@@ -68,7 +66,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_3.Parent = Frame
     TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_3.BackgroundTransparency = 1.000
-    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.443608999, 0)
+    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.393608999, 0)
     TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_3.Font = Enum.Font.GothamSemibold
     TextLabel_3.Text = "$0"
@@ -78,10 +76,10 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_4.Parent = Frame
     TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.BackgroundTransparency = 1.000
-    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.547368407, 0)
+    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.427368407, 0)
     TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_4.Font = Enum.Font.GothamSemibold
-    TextLabel_4.Text = "This script increases CPU and GPU preformances."
+    TextLabel_4.Text = "discord.gg/cmdtools"
     TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.TextSize = 30.000
 
@@ -234,14 +232,9 @@ player.Chatted:Connect(function(msg)
         msg = string.split(msg," ")
         if msg[1] == baseprefix then
             if msg[2] == "cashcounter" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/CashCounterScript.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ZyscoXD/lolctrl/main/cash"))()
             elseif msg[2] == "gui" then
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/AltControlSellerGuiPackage.lua"))()
-            elseif msg[2] == "fly" then
-                getgenv().FLYMODE = "Default"
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/open_sources/freefly.lua"))()
-            elseif msg[2] == "chatspy" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/AltControlChatSpy.lua"))()
             elseif msg[2] == "place" then
                 local function BreakCFrame(cords)
                     local pos = OperatorPos[cords]
@@ -364,7 +357,7 @@ local function cmds(msg,plr)
                             content = "",
                             embeds = {
                                 {
-                                    ['title'] = "Encrypt Alt Control!",
+                                    ['title'] = "Gay Alt Control",
                                     ['description'] = WebMsg,
                                     ['color'] = tonumber(0x6c00bd)
                                 }
@@ -477,7 +470,7 @@ local function cmds(msg,plr)
                     IngameSettings['advertisement'] = true
                     while IngameSettings['advertisement'] == true do
                         if Settings['AdMsg'] == "" or Settings['AdMsg'] == nil then
-                            Settings['AdMsg'] = "discord.gg/encrypt"
+                            Settings['AdMsg'] = "discord.gg/cmd.tools"
                         end
                         saymsg(Settings['AdMsg'])
                         wait(Settings['AdDelay'])
@@ -500,8 +493,8 @@ local function cmds(msg,plr)
                 end
             elseif msg[1] == Settings['Prefix'].."airlock" then
                 if string.lower(msg[2]) == "on" then
-                    local PartName = "FloatingPart"
-                    local FolderName = "Encrypt"
+                    local PartName = "AirlockPart"
+                    local FolderName = "CMD.Tools"
                     if not workspace:FindFirstChild(FolderName) then
                         local Folder = Instance.new("Folder",workspace)
                         Folder.Name = FolderName
@@ -517,10 +510,10 @@ local function cmds(msg,plr)
                     Part.Size = Vector3.new(15,1,15)
                     Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
-                    for i,v in pairs(workspace['Encrypt']:GetChildren()) do
-                        if v.Name == 'FloatingPart' then
+                    for i,v in pairs(workspace['CMD.Tools']:GetChildren()) do
+                        if v.Name == 'AirlockPart' then
                             v:Destroy()
                         end
                     end
@@ -611,18 +604,6 @@ local function cmds(msg,plr)
                         player.Backpack:FindFirstChild("Mask").Parent = player.Character
                         player.Character:FindFirstChild("Mask"):Activate()
                         player.Character:FindFirstChild("Mask").Parent = player.Backpack
-                    end
-                end
-            elseif msg[1] == Settings['Prefix'].."crash" then
-                if string.lower(msg[2]) == "encrypt" then
-                    if player.UserId == Alts[1] or player.UserId == Alts[2] or player.UserId == Alts[3] then
-                        setfpscap(60)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dahoodcrasher.lua"))()
-                    end
-                elseif string.lower(msg[2]) == "swag" then
-                    if player.UserId == Alts[1] or player.UserId == Alts[2] or player.UserId == Alts[3] then
-                        setfpscap(60)
-                        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
                     end
                 end
             elseif msg[1] == Settings['Prefix'].."hide" then
