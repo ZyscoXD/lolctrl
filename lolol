@@ -3,9 +3,9 @@ getgenv().Settings = {
     Prefix = "?",
     AdMsg = "fikop alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 1,
+    FPS_CAP = 15,
     BlackScreen = true,
-    WebhookURL = "",
+    WebhookURL = "https://discord.com/api/webhooks/1251662106059608065/2h7tPkHN3-aTzAmAngCQOgFG_vFUHAoedIWhAayZV7KWVvi8AKKHPodRj93Nfona_qkf",
 }
 getgenv().Alts = {2310126993}
 if not game:IsLoaded() then
