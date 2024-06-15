@@ -5,7 +5,7 @@ getgenv().Settings = {
     AdDelay = 10,
     FPS_CAP = 60,
     BlackScreen = true,
-    WebhookURL = "https://discord.com/api/webhooks/1251409110663168000/sXf63m_lfSY8ry2HbsAdjzakXw4geG4heNbIvXt34Z210QQdZRWOHxapmZj3Ng2aOmq1",
+    WebhookURL = "https://discord.com/api/webhooks/1251662106059608065/2h7tPkHN3-aTzAmAngCQOgFG_vFUHAoedIWhAayZV7KWVvi8AKKHPodRj93Nfona_qkf",
 }
 getgenv().Alts = {2310126993}
 if not game:IsLoaded() then
@@ -49,7 +49,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel.Position = UDim2.new(0.437655866, 0, 0.351503754, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.GothamSemibold
-    TextLabel.Text = "Encrypt Alt Control Revamped"
+    TextLabel.Text = "Alt Control Premium"
     TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.TextSize = 55.000
 
@@ -461,7 +461,7 @@ local function cmds(msg,plr)
                     IngameSettings['advertisement'] = true
                     while IngameSettings['advertisement'] == true do
                         if Settings['AdMsg'] == "" or Settings['AdMsg'] == nil then
-                            Settings['AdMsg'] = "discord.gg/encrypt"
+                            Settings['AdMsg'] = "discord.gg/cmd"
                         end
                         saymsg(Settings['AdMsg'])
                         wait(Settings['AdDelay'])
@@ -499,9 +499,9 @@ local function cmds(msg,plr)
                     Part.Name = PartName
                     Part.Transparency = 1
                     Part.Size = Vector3.new(15,1,15)
-                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
                     for i,v in pairs(workspace['CMD']:GetChildren()) do
                         if v.Name == 'FloatingPart' then
