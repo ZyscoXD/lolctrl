@@ -3,7 +3,7 @@ getgenv().Settings = {
     Prefix = "?",
     AdMsg = "fikop alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 15,
+    FPS_CAP = 16,
     BlackScreen = true,
     WebhookURL = "https://discord.com/api/webhooks/1251662106059608065/2h7tPkHN3-aTzAmAngCQOgFG_vFUHAoedIWhAayZV7KWVvi8AKKHPodRj93Nfona_qkf",
 }
