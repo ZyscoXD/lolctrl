@@ -27,6 +27,8 @@ local player = game.Players.LocalPlayer
 if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],player.UserId) then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
     local ScreenGui = Instance.new("ScreenGui")
+    local LocalPlayer = Players.LocalPlayer
+    local Players = game:GetService("Players")
     local Frame = Instance.new("Frame")
     local TextLabel = Instance.new("TextLabel")
     local TextLabel_2 = Instance.new("TextLabel")
