@@ -1,9 +1,9 @@
 getgenv().Settings = {
     Operator = {4992163150},
-    Prefix = "?",
-    AdMsg = "fikop alt ctrl",
+    Prefix = ".",
+    AdMsg = "not cool alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 30,
+    FPS_CAP = 60,
     BlackScreen = true,
     WebhookURL = "https://discord.com/api/webhooks/1251409110663168000/sXf63m_lfSY8ry2HbsAdjzakXw4geG4heNbIvXt34Z210QQdZRWOHxapmZj3Ng2aOmq1",
 }
@@ -12,7 +12,7 @@ if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 if Settings['advertisement'] then
-    game.Players.LocalPlayer:Kick("gay")
+    game.Players.LocalPlayer:Kick("\nNew Script has been added!\n\nHey, "..game.Players.LocalPlayer.Name.." there is a new script in encrypt for this alt control. Please join discord.gg/encrypt to get the new script, all whitelists are the same.")
 end
 game.Players.LocalPlayer.Idled:Connect(function()
     game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
@@ -46,17 +46,17 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel.Parent = Frame
     TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.BackgroundTransparency = 1.000
-    TextLabel.Position = UDim2.new(0.437655866, 0, 0.301503754, 0)
+    TextLabel.Position = UDim2.new(0.437655866, 0, 0.201503754, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.GothamSemibold
-    TextLabel.Text = "im gay zysco daddy ahhh"
+    TextLabel.Text = "Encrypt Alt Control Revamped"
     TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.TextSize = 55.000
 
     TextLabel_2.Parent = Frame
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
-    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.357293257, 0)
+    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.317293257, 0)
     TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_2.Font = Enum.Font.GothamSemibold
     TextLabel_2.Text = "Name"
@@ -66,7 +66,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_3.Parent = Frame
     TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_3.BackgroundTransparency = 1.000
-    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.393608999, 0)
+    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.443608999, 0)
     TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_3.Font = Enum.Font.GothamSemibold
     TextLabel_3.Text = "$0"
@@ -76,10 +76,10 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_4.Parent = Frame
     TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.BackgroundTransparency = 1.000
-    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.427368407, 0)
+    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.547368407, 0)
     TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_4.Font = Enum.Font.GothamSemibold
-    TextLabel_4.Text = "discord.gg/cmdtools"
+    TextLabel_4.Text = "This script increases CPU and GPU preformances."
     TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.TextSize = 30.000
 
@@ -190,7 +190,6 @@ local CustomSetups = {
 }
 
 local locations = {
-    Admin = {"-826,-40,-617","-826,-40,-605","-826,-40,-593","-826,-40,-581","-826,-40,-569","-826,-40,-557","-845,-40,-617","-845,-40,-605","-845,-40,-593","-845,-40,-581","-845,-40,-569","-845,-40,-557","-864,-40,-617","-864,-40,-605","-864,-40,-593","-864,-40,-581","-864,-40,-569","-864,-40,-557","-879,-40,-617","-879,-40,-605","-879,-40,-593","-879,-40,-581","-879,-40,-569","-879,-40,-557","-898,-40,-617","-898,-40,-605","-898,-40,-593","-898,-40,-581","-898,-40,-569","-898,-40,-557","-918,-40,-617","-918,-40,-605","-918,-40,-593","-918,-40,-581","-918,-40,-569","-918,-40,-557","-816,-33,-643","-927,-33,-642","-873,-33,-521"},
     Bank = {"-388,21,-336","-388,21,-327","-388,21,-318","-388,21,-309","-388,21,-300","-388,21,-291","-388,21,-282","-388,21,-273","-388,21,-264","-388,21,-255","-388,21,-246","-388,21,-237","-388,21,-228","-375,21,-336","-375,21,-327","-375,21,-318","-375,21,-309","-375,21,-300","-375,21,-291","-375,21,-282","-375,21,-273","-375,21,-264","-375,21,-255","-375,21,-246","-375,21,-237","-375,21,-228","-360,21,-336","-360,21,-327","-360,21,-318","-360,21,-309","-360,21,-300","-360,21,-291","-360,21,-282","-360,21,-273","-360,21,-264","-360,21,-255","-360,21,-246","-360,21,-237","-360,21,-228"},
     Jailyard = {"-343,21,-70","-333,21,-70","-323,21,-70","-343,21,-65","-333,21,-65","-323,21,-65","-343,21,-60","-333,21,-60","-323,21,-60","-343,21,-55","-333,21,-55","-323,21,-55","-343,21,-50","-333,21,-50","-323,21,-50","-343,21,-45","-333,21,-45","-323,21,-45","-343,21,-40","-333,21,-40","-323,21,-40","-343,21,-35","-333,21,-35","-323,21,-35","-343,21,-30","-333,21,-30","-323,21,-30","-343,21,-25","-333,21,-25","-323,21,-25","-343,21,-20","-333,21,-20","-323,21,-20","-343,21,-15","-333,21,-15","-323,21,-15"},
     Jailcell = {"-309,21,-69","-305,21,-69","-301,21,-69","-297,21,-69","-293,21,-69","-289,21,-69","-285,21,-69","-281,21,-69","-309,21,-67","-305,21,-67","-301,21,-67","-297,21,-67","-293,21,-67","-289,21,-67","-285,21,-67","-281,21,-67","-309,21,-65","-305,21,-65","-301,21,-65","-297,21,-65","-293,21,-65","-289,21,-65","-285,21,-65","-281,21,-65"},
@@ -198,7 +197,6 @@ local locations = {
     Highschool = {"-659,47,312","-651,47,312","-643,47,312","-635,47,312","-627,47,312","-619,47,312","-611,47,312","-603,47,312","-595,47,312","-587,47,312","-579,47,312","-571,47,312","-659,47,321","-651,47,321","-643,47,321","-635,47,321","-627,47,321","-619,47,321","-611,47,321","-603,47,321","-595,47,321","-587,47,321","-579,47,321","-571,47,321","-659,47,330","-651,47,330","-643,47,330","-635,47,330","-627,47,330","-619,47,330","-611,47,330","-603,47,330","-595,47,330","-587,47,330","-579,47,330","-571,47,330"},
     Subway = {"671,47,-42","660,47,-42","649,47,-42","638,47,-42","627,47,-42","616,47,-42","605,47,-42","594,47,-42","671,47,-51","660,47,-51","649,47,-51","638,47,-51","627,47,-51","616,47,-51","605,47,-51","594,47,-51","671,47,-60","660,47,-60","649,47,-60","638,47,-60","627,47,-60","616,47,-60","605,47,-60","594,47,-60","671,47,-69","660,47,-69","649,47,-69","638,47,-69","627,47,-69","616,47,-69","605,47,-69","594,47,-69","671,47,-78","660,47,-78","649,47,-78","638,47,-78","627,47,-78","616,47,-78","605,47,-78","594,47,-78"},
     Traintracks = {"553,35,-56","553,35,-66","553,35,-76","553,35,-86","553,35,-96","553,35,-106","568,35,-56","568,35,-66","568,35,-76","568,35,-86","568,35,-96","568,35,-106","688,35,-141","679,35,-141","670,35,-141","661,35,-141","652,35,-141","643,35,-141","634,35,-141","625,35,-141","616,35,-141","607,35,-141","688,35,-156","679,35,-156","670,35,-156","661,35,-156","652,35,-156","643,35,-156","634,35,-156","625,35,-156","616,35,-156","607,35,-156","586,34,-142","579,34,-135","566,34,-122","572,34,-115","583,34,-127","593,34,-138"},
-    Admin2 = {"-883,-40,-567","-883,-40,-572","-883,-40,-577","-883,-40,-582","-883,-40,-587","-883,-40,-592","-883,-40,-597","-883,-40,-602","-883,-40,-607","-883,-40,-612","-875,-40,-567","-875,-40,-572","-875,-40,-577","-875,-40,-582","-875,-40,-587","-875,-40,-592","-875,-40,-597","-875,-40,-602","-875,-40,-607","-875,-40,-612","-867,-40,-567","-867,-40,-572","-867,-40,-577","-867,-40,-582","-867,-40,-587","-867,-40,-592","-867,-40,-597","-867,-40,-602","-867,-40,-607","-867,-40,-612","-860,-40,-567","-860,-40,-572","-860,-40,-577","-860,-40,-582","-860,-40,-587","-860,-40,-592","-860,-40,-597","-860,-40,-602","-860,-40,-607","-860,-40,-612"},
 }
 
 function SurroundPlr(target)
@@ -234,7 +232,7 @@ player.Chatted:Connect(function(msg)
             if msg[2] == "cashcounter" then
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZyscoXD/lolctrl/main/cash"))()
             elseif msg[2] == "gui" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/AltControlSellerGuiPackage.lua"))()
+                loadstring(game:HttpGet(""))()
             elseif msg[2] == "place" then
                 local function BreakCFrame(cords)
                     local pos = OperatorPos[cords]
@@ -357,7 +355,7 @@ local function cmds(msg,plr)
                             content = "",
                             embeds = {
                                 {
-                                    ['title'] = "Gay Alt Control",
+                                    ['title'] = "Encrypt Alt Control!",
                                     ['description'] = WebMsg,
                                     ['color'] = tonumber(0x6c00bd)
                                 }
@@ -470,7 +468,7 @@ local function cmds(msg,plr)
                     IngameSettings['advertisement'] = true
                     while IngameSettings['advertisement'] == true do
                         if Settings['AdMsg'] == "" or Settings['AdMsg'] == nil then
-                            Settings['AdMsg'] = "discord.gg/cmd.tools"
+                            Settings['AdMsg'] = "discord.gg/encrypt"
                         end
                         saymsg(Settings['AdMsg'])
                         wait(Settings['AdDelay'])
@@ -493,8 +491,8 @@ local function cmds(msg,plr)
                 end
             elseif msg[1] == Settings['Prefix'].."airlock" then
                 if string.lower(msg[2]) == "on" then
-                    local PartName = "AirlockPart"
-                    local FolderName = "CMD.Tools"
+                    local PartName = "FloatingPart"
+                    local FolderName = "Encrypt"
                     if not workspace:FindFirstChild(FolderName) then
                         local Folder = Instance.new("Folder",workspace)
                         Folder.Name = FolderName
@@ -510,10 +508,10 @@ local function cmds(msg,plr)
                     Part.Size = Vector3.new(15,1,15)
                     Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
-                    for i,v in pairs(workspace['CMD.Tools']:GetChildren()) do
-                        if v.Name == 'AirlockPart' then
+                    for i,v in pairs(workspace['Encrypt']:GetChildren()) do
+                        if v.Name == 'FloatingPart' then
                             v:Destroy()
                         end
                     end
