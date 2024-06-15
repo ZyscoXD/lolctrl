@@ -506,9 +506,9 @@ local function cmds(msg,plr)
                     Part.Name = PartName
                     Part.Transparency = 1
                     Part.Size = Vector3.new(15,1,15)
-                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
                     for i,v in pairs(workspace['Encrypt']:GetChildren()) do
                         if v.Name == 'FloatingPart' then
