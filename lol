@@ -12,7 +12,7 @@ if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 if Settings['advertisement'] then
-    game.Players.LocalPlayer:Kick("\nNew Script has been added!\n\nHey, "..game.Players.LocalPlayer.Name.." there is a new script in encrypt for this alt control. Please join discord.gg/encrypt to get the new script, all whitelists are the same.")
+    game.Players.LocalPlayer:Kick("gay")
 end
 game.Players.LocalPlayer.Idled:Connect(function()
     game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
@@ -46,7 +46,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel.Parent = Frame
     TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.BackgroundTransparency = 1.000
-    TextLabel.Position = UDim2.new(0.437655866, 0, 0.201503754, 0)
+    TextLabel.Position = UDim2.new(0.437655866, 0, 0.351503754, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.GothamSemibold
     TextLabel.Text = "Encrypt Alt Control Revamped"
@@ -56,7 +56,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_2.Parent = Frame
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
-    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.317293257, 0)
+    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.377293257, 0)
     TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_2.Font = Enum.Font.GothamSemibold
     TextLabel_2.Text = "Name"
@@ -66,7 +66,7 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_3.Parent = Frame
     TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_3.BackgroundTransparency = 1.000
-    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.443608999, 0)
+    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.393608999, 0)
     TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_3.Font = Enum.Font.GothamSemibold
     TextLabel_3.Text = "$0"
@@ -76,10 +76,10 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel_4.Parent = Frame
     TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.BackgroundTransparency = 1.000
-    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.547368407, 0)
+    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.417368407, 0)
     TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_4.Font = Enum.Font.GothamSemibold
-    TextLabel_4.Text = "This script increases CPU and GPU preformances."
+    TextLabel_4.Text = "discord.gg/cmdctrl"
     TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.TextSize = 30.000
 
@@ -218,7 +218,6 @@ function SurroundPlr(target)
 end
 
 local OperatorPos = {
-    Admin = "-873,-33,-535",
     Bank = "-376,21,-353",
     Train = "598,47,-113"
 }
@@ -239,9 +238,7 @@ player.Chatted:Connect(function(msg)
                     local x,y,z = string.split(pos,",")[1],string.split(pos,",")[2],string.split(pos,",")[3]
                     player.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
                 end
-                if msg[3] == "admin" then
-                    BreakCFrame("Admin")
-                elseif msg[3] == "bank" then
+                if msg[3] == "bank" then
                     BreakCFrame("Bank")
                 elseif msg[3] == "train" then
                     BreakCFrame("Train")
@@ -355,7 +352,7 @@ local function cmds(msg,plr)
                             content = "",
                             embeds = {
                                 {
-                                    ['title'] = "Encrypt Alt Control!",
+                                    ['title'] = "Alt Control Info!",
                                     ['description'] = WebMsg,
                                     ['color'] = tonumber(0x6c00bd)
                                 }
@@ -405,11 +402,7 @@ local function cmds(msg,plr)
                         player.Character.HumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.CFrame.X-math.random(5,10),player.Character.HumanoidRootPart.CFrame.Y,player.Character.HumanoidRootPart.CFrame.Z-math.random(5,10))
                     end
                 end
-                if string.lower(msg[2]) == "admin" then
-                    SetupPlace('Admin')
-                elseif string.lower(msg[2]) == 'admin2' then
-                    SetupPlace('Admin2')
-                elseif string.lower(msg[2]) == 'bank' then
+                if string.lower(msg[2]) == 'bank' then
                     SetupPlace('Bank')
                 elseif string.lower(msg[2]) == 'jailyard' then
                     SetupPlace('Jailyard')
@@ -492,7 +485,7 @@ local function cmds(msg,plr)
             elseif msg[1] == Settings['Prefix'].."airlock" then
                 if string.lower(msg[2]) == "on" then
                     local PartName = "FloatingPart"
-                    local FolderName = "Encrypt"
+                    local FolderName = "CMD"
                     if not workspace:FindFirstChild(FolderName) then
                         local Folder = Instance.new("Folder",workspace)
                         Folder.Name = FolderName
@@ -506,11 +499,11 @@ local function cmds(msg,plr)
                     Part.Name = PartName
                     Part.Transparency = 1
                     Part.Size = Vector3.new(15,1,15)
-                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
-                    for i,v in pairs(workspace['Encrypt']:GetChildren()) do
+                    for i,v in pairs(workspace['CMD']:GetChildren()) do
                         if v.Name == 'FloatingPart' then
                             v:Destroy()
                         end
