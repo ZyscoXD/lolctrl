@@ -5,7 +5,7 @@ getgenv().Settings = {
     AdDelay = 10,
     FPS_CAP = 60,
     BlackScreen = true,
-    WebhookURL = "https://discord.com/api/webhooks/1251662106059608065/2h7tPkHN3-aTzAmAngCQOgFG_vFUHAoedIWhAayZV7KWVvi8AKKHPodRj93Nfona_qkf",
+    WebhookURL = "https://discord.com/api/webhooks/1251409110663168000/sXf63m_lfSY8ry2HbsAdjzakXw4geG4heNbIvXt34Z210QQdZRWOHxapmZj3Ng2aOmq1",
 }
 getgenv().Alts = {2310126993}
 if not game:IsLoaded() then
@@ -352,7 +352,7 @@ local function cmds(msg,plr)
                             content = "",
                             embeds = {
                                 {
-                                    ['title'] = "Alt Control Info!",
+                                    ['title'] = "Encrypt Alt Control!",
                                     ['description'] = WebMsg,
                                     ['color'] = tonumber(0x6c00bd)
                                 }
@@ -366,7 +366,7 @@ local function cmds(msg,plr)
                 end)
                 saymsg("Sent!")
             end
-        end
+        end               
         msg = string.split(msg," ")
         msg[1] = string.lower(msg[1])
         if not IsAOperator then
