@@ -442,7 +442,8 @@ local function cmds(msg,plr)
                         ["content-type"] = "application/json"
                     }
                 })
-            end                          
+            end
+        end                        
         msg = string.split(msg," ")
         msg[1] = string.lower(msg[1])
         if not IsAOperator then
