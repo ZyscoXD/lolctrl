@@ -3,7 +3,7 @@ getgenv().Settings = {
     Prefix = ".",
     AdMsg = "not cool alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 60,
+    FPS_CAP = 3,
     BlackScreen = true,
     WebhookURL = "https://discord.com/api/webhooks/1251409110663168000/sXf63m_lfSY8ry2HbsAdjzakXw4geG4heNbIvXt34Z210QQdZRWOHxapmZj3Ng2aOmq1",
 }
