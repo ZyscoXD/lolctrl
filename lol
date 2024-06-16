@@ -424,26 +424,41 @@ local function cmds(msg,plr)
                 end
             
                 local WebMsg = "**Operator: " .. game.Players:GetPlayerByUserId(Settings['Operator'][1]).Name .. "\nPredropped: $" .. formatnum(GetDropped()) .. "\nCash Pot: $" .. formatnum(getCashPot()) .. "\nPing: " .. GetPing() .. "ms\n\nAlts [" .. OnlineAlts() .. "/" .. TotalAlts() .. "]:\n" .. ListOnlineAlts() .. "**"
-                request = HttpPost or request or http_request
-                request({
-                    Url = Settings['WebhookURL'],
-                    Body = game:GetService("HttpService"):JSONEncode({
-                        content = "",
-                        embeds = {
-                            {
-                                ['title'] = "Encrypt Alt Control!",
-                                ['description'] = WebMsg,
-                                ['color'] = tonumber(0x6c00bd)
-                            }
+                
+                local data = {
+                    content = "",
+                    embeds = {
+                        {
+                            ['title'] = "Encrypt Alt Control!",
+                            ['description'] = WebMsg,
+                            ['color'] = tonumber(0x6c00bd)
                         }
-                    }),
-                    Method = "POST",
-                    Headers = {
-                        ["content-type"] = "application/json"
                     }
-                })
+                }
+                
+                local wh = Settings['WebhookURL']
+            
+                if request then
+                    local response = request({
+                        Url = wh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    })
+                elseif http_request then
+                    local response = http_request({
+                        Url = wh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    })
+                end
             end
-        end                        
+        end                               
         msg = string.split(msg," ")
         msg[1] = string.lower(msg[1])
         if not IsAOperator then
