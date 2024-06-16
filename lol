@@ -337,12 +337,13 @@ local function cmds(msg,plr)
                 return
             end
             if player.UserId == Alts[1] then
-                local function TotalAlts()local a=0;for b,c in pairs(Alts)do a=a+1 end;return a end
-                local function OnlineAlts()local a=0;function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a+1 end end;return a end
-                local function GetPing()local a=game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()local b=string.split(a,'(')local c=tonumber(b[1])c=tonumber(string.format("%.0f",c))return c end
-                local function GetDropped()local a=0;for b,c in pairs(game.Workspace.Ignored.Drop:GetChildren())do if c.Name=="MoneyDrop"and c:IsA("Part")then local d=c:FindFirstChild("BillboardGui"):FindFirstChild("TextLabel").Text;if d then d=d:gsub("%,","")d=d:gsub("%$","")a=a+tonumber(d)end end end;return a end
-                local function ListOnlineAlts()local a=""function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a..""..game.Players:GetPlayerByUserId(d).Name.."\n"end end;if a==""then return"None"end;return a end
-                local function getCashPot()local a=0;for b,c in pairs(game.Players:GetChildren())do if not game.Workspace.Players:FindFirstChild(c.Name)then repeat wait()until game.Workspace.Players:FindFirstChild(c.Name)end;a=a+c.DataFolder.Currency.Value end;return a end
+                local success, err = pcall(function()
+                function TotalAlts() local a=0;for b,c in pairs(Alts) do a=a+1 end;return a end
+                function OnlineAlts() local a=0;function CheckPlr(b) for c,d in pairs(game.Players:GetChildren()) do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a+1 end end;return a end
+                function GetPing() local a=game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()local b=string.split(a,'(')local c=tonumber(b[1])c=tonumber(string.format("%.0f",c))return c end
+                function GetDropped() local a=0;for b,c in pairs(game.Workspace.Ignored.Drop:GetChildren())do if c.Name=="MoneyDrop"and c:IsA("Part")then local d=c:FindFirstChild("BillboardGui"):FindFirstChild("TextLabel").Text;if d then d=d:gsub("%,","")d=d:gsub("%$","")a=a+tonumber(d)end end end;return a end
+                function ListOnlineAlts()local a=""function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a..""..game.Players:GetPlayerByUserId(d).Name.."\n"end end;if a==""then return"None"end;return a end
+                function getCashPot()local a=0;for b,c in pairs(game.Players:GetChildren())do if not game.Workspace.Players:FindFirstChild(c.Name)then repeat wait()until game.Workspace.Players:FindFirstChild(c.Name)end;a=a+c.DataFolder.Currency.Value end;return a end
                     local WebMsg = "**Operator: "..game.Players:GetPlayerByUserId(Settings['Operator'][1]).Name.."\nPredropped: $"..formatnum(GetDropped()).."\nCash Pot: $"..formatnum(getCashPot()).."\nPing: "..GetPing().."ms\n\nAlts ["..OnlineAlts().."/"..TotalAlts().."]:\n"..ListOnlineAlts().."**"
                     request = HttpPost or request or http_request
                     request({
