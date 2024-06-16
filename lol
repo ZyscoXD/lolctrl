@@ -429,9 +429,9 @@ local function cmds(msg,plr)
                     content = "",
                     embeds = {
                         {
-                            ['title'] = "Encrypt Alt Control!",
+                            ['title'] = "CMD.TOOLS Info!",
                             ['description'] = WebMsg,
-                            ['color'] = tonumber(0x6c00bd)
+                            ['color'] = tonumber(0x0f00bd)
                         }
                     }
                 }
