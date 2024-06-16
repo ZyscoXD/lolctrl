@@ -337,7 +337,6 @@ local function cmds(msg,plr)
                 return
             end
             if player.UserId == Alts[1] then
-                local success, err = pcall(function()
                 local function TotalAlts()local a=0;for b,c in pairs(Alts)do a=a+1 end;return a end
                 local function OnlineAlts()local a=0;function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a+1 end end;return a end
                 local function GetPing()local a=game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()local b=string.split(a,'(')local c=tonumber(b[1])c=tonumber(string.format("%.0f",c))return c end
