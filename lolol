@@ -1,18 +1,18 @@
 getgenv().Settings = {
-    Operator = {4992163150},
-    Prefix = "?",
-    AdMsg = "fikop alt ctrl",
+    Operator = {4214044480},
+    Prefix = ".",
+    AdMsg = "not cool alt ctrl",
     AdDelay = 10,
-    FPS_CAP = 16,
+    FPS_CAP = 5,
     BlackScreen = true,
-    WebhookURL = "https://discord.com/api/webhooks/1251662106059608065/2h7tPkHN3-aTzAmAngCQOgFG_vFUHAoedIWhAayZV7KWVvi8AKKHPodRj93Nfona_qkf",
+    WebhookURL = "https://discord.com/api/webhooks/1252768092321480855/bnTH7eipKSjNBH2z4eMUlPwtddHdru8JsfUrTuN0-yqS0wRoFtHDY09yKckwukq5lf0q",
 }
-getgenv().Alts = {2310126993}
+getgenv().Alts = {4329208366}
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 if Settings['advertisement'] then
-    game.Players.LocalPlayer:Kick("\nNew Script has been added!\n\nHey, "..game.Players.LocalPlayer.Name.." there is a new script in encrypt for this alt control. Please join discord.gg/encrypt to get the new script, all whitelists are the same.")
+    game.Players.LocalPlayer:Kick("gay")
 end
 game.Players.LocalPlayer.Idled:Connect(function()
     game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
@@ -37,8 +37,8 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
 
     Frame.Parent = ScreenGui
     Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    Frame.BorderColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderSizePixel = 100
     Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
     Frame.Size = UDim2.new(1, 0, 1, 0)
@@ -46,41 +46,41 @@ if Settings['BlackScreen'] == true and not table.find(Settings['Operator'],playe
     TextLabel.Parent = Frame
     TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.BackgroundTransparency = 1.000
-    TextLabel.Position = UDim2.new(0.437655866, 0, 0.201503754, 0)
+    TextLabel.Position = UDim2.new(0.437655866, 0, 0.361503754, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.GothamSemibold
-    TextLabel.Text = "Encrypt Alt Control Revamped"
-    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.Text = "CMD.Tools premium"
+    TextLabel.TextColor3 = Color3.fromRGB(50, 50, 50)
     TextLabel.TextSize = 55.000
 
     TextLabel_2.Parent = Frame
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
-    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.317293257, 0)
+    TextLabel_2.Position = UDim2.new(0.437655866, 0, 0.407293257, 0)
     TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_2.Font = Enum.Font.GothamSemibold
     TextLabel_2.Text = "Name"
-    TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_2.TextColor3 = Color3.fromRGB(50, 50, 50)
     TextLabel_2.TextSize = 30.000
 
     TextLabel_3.Parent = Frame
     TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_3.BackgroundTransparency = 1.000
-    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.443608999, 0)
+    TextLabel_3.Position = UDim2.new(0.437655866, 0, 0.453608999, 0)
     TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_3.Font = Enum.Font.GothamSemibold
     TextLabel_3.Text = "$0"
-    TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_3.TextColor3 = Color3.fromRGB(50, 50, 50)
     TextLabel_3.TextSize = 30.000
 
     TextLabel_4.Parent = Frame
     TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.BackgroundTransparency = 1.000
-    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.547368407, 0)
+    TextLabel_4.Position = UDim2.new(0.437655866, 0, 0.497368407, 0)
     TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_4.Font = Enum.Font.GothamSemibold
-    TextLabel_4.Text = "This script increases CPU and GPU preformances."
-    TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_4.Text = "discord.gg/cmdctrl"
+    TextLabel_4.TextColor3 = Color3.fromRGB(50, 50, 50)
     TextLabel_4.TextSize = 30.000
 
     -- Scripts:
@@ -190,7 +190,6 @@ local CustomSetups = {
 }
 
 local locations = {
-    Admin = {"-826,-40,-617","-826,-40,-605","-826,-40,-593","-826,-40,-581","-826,-40,-569","-826,-40,-557","-845,-40,-617","-845,-40,-605","-845,-40,-593","-845,-40,-581","-845,-40,-569","-845,-40,-557","-864,-40,-617","-864,-40,-605","-864,-40,-593","-864,-40,-581","-864,-40,-569","-864,-40,-557","-879,-40,-617","-879,-40,-605","-879,-40,-593","-879,-40,-581","-879,-40,-569","-879,-40,-557","-898,-40,-617","-898,-40,-605","-898,-40,-593","-898,-40,-581","-898,-40,-569","-898,-40,-557","-918,-40,-617","-918,-40,-605","-918,-40,-593","-918,-40,-581","-918,-40,-569","-918,-40,-557","-816,-33,-643","-927,-33,-642","-873,-33,-521"},
     Bank = {"-388,21,-336","-388,21,-327","-388,21,-318","-388,21,-309","-388,21,-300","-388,21,-291","-388,21,-282","-388,21,-273","-388,21,-264","-388,21,-255","-388,21,-246","-388,21,-237","-388,21,-228","-375,21,-336","-375,21,-327","-375,21,-318","-375,21,-309","-375,21,-300","-375,21,-291","-375,21,-282","-375,21,-273","-375,21,-264","-375,21,-255","-375,21,-246","-375,21,-237","-375,21,-228","-360,21,-336","-360,21,-327","-360,21,-318","-360,21,-309","-360,21,-300","-360,21,-291","-360,21,-282","-360,21,-273","-360,21,-264","-360,21,-255","-360,21,-246","-360,21,-237","-360,21,-228"},
     Jailyard = {"-343,21,-70","-333,21,-70","-323,21,-70","-343,21,-65","-333,21,-65","-323,21,-65","-343,21,-60","-333,21,-60","-323,21,-60","-343,21,-55","-333,21,-55","-323,21,-55","-343,21,-50","-333,21,-50","-323,21,-50","-343,21,-45","-333,21,-45","-323,21,-45","-343,21,-40","-333,21,-40","-323,21,-40","-343,21,-35","-333,21,-35","-323,21,-35","-343,21,-30","-333,21,-30","-323,21,-30","-343,21,-25","-333,21,-25","-323,21,-25","-343,21,-20","-333,21,-20","-323,21,-20","-343,21,-15","-333,21,-15","-323,21,-15"},
     Jailcell = {"-309,21,-69","-305,21,-69","-301,21,-69","-297,21,-69","-293,21,-69","-289,21,-69","-285,21,-69","-281,21,-69","-309,21,-67","-305,21,-67","-301,21,-67","-297,21,-67","-293,21,-67","-289,21,-67","-285,21,-67","-281,21,-67","-309,21,-65","-305,21,-65","-301,21,-65","-297,21,-65","-293,21,-65","-289,21,-65","-285,21,-65","-281,21,-65"},
@@ -198,7 +197,6 @@ local locations = {
     Highschool = {"-659,47,312","-651,47,312","-643,47,312","-635,47,312","-627,47,312","-619,47,312","-611,47,312","-603,47,312","-595,47,312","-587,47,312","-579,47,312","-571,47,312","-659,47,321","-651,47,321","-643,47,321","-635,47,321","-627,47,321","-619,47,321","-611,47,321","-603,47,321","-595,47,321","-587,47,321","-579,47,321","-571,47,321","-659,47,330","-651,47,330","-643,47,330","-635,47,330","-627,47,330","-619,47,330","-611,47,330","-603,47,330","-595,47,330","-587,47,330","-579,47,330","-571,47,330"},
     Subway = {"671,47,-42","660,47,-42","649,47,-42","638,47,-42","627,47,-42","616,47,-42","605,47,-42","594,47,-42","671,47,-51","660,47,-51","649,47,-51","638,47,-51","627,47,-51","616,47,-51","605,47,-51","594,47,-51","671,47,-60","660,47,-60","649,47,-60","638,47,-60","627,47,-60","616,47,-60","605,47,-60","594,47,-60","671,47,-69","660,47,-69","649,47,-69","638,47,-69","627,47,-69","616,47,-69","605,47,-69","594,47,-69","671,47,-78","660,47,-78","649,47,-78","638,47,-78","627,47,-78","616,47,-78","605,47,-78","594,47,-78"},
     Traintracks = {"553,35,-56","553,35,-66","553,35,-76","553,35,-86","553,35,-96","553,35,-106","568,35,-56","568,35,-66","568,35,-76","568,35,-86","568,35,-96","568,35,-106","688,35,-141","679,35,-141","670,35,-141","661,35,-141","652,35,-141","643,35,-141","634,35,-141","625,35,-141","616,35,-141","607,35,-141","688,35,-156","679,35,-156","670,35,-156","661,35,-156","652,35,-156","643,35,-156","634,35,-156","625,35,-156","616,35,-156","607,35,-156","586,34,-142","579,34,-135","566,34,-122","572,34,-115","583,34,-127","593,34,-138"},
-    Admin2 = {"-883,-40,-567","-883,-40,-572","-883,-40,-577","-883,-40,-582","-883,-40,-587","-883,-40,-592","-883,-40,-597","-883,-40,-602","-883,-40,-607","-883,-40,-612","-875,-40,-567","-875,-40,-572","-875,-40,-577","-875,-40,-582","-875,-40,-587","-875,-40,-592","-875,-40,-597","-875,-40,-602","-875,-40,-607","-875,-40,-612","-867,-40,-567","-867,-40,-572","-867,-40,-577","-867,-40,-582","-867,-40,-587","-867,-40,-592","-867,-40,-597","-867,-40,-602","-867,-40,-607","-867,-40,-612","-860,-40,-567","-860,-40,-572","-860,-40,-577","-860,-40,-582","-860,-40,-587","-860,-40,-592","-860,-40,-597","-860,-40,-602","-860,-40,-607","-860,-40,-612"},
 }
 
 function SurroundPlr(target)
@@ -220,7 +218,6 @@ function SurroundPlr(target)
 end
 
 local OperatorPos = {
-    Admin = "-873,-33,-535",
     Bank = "-376,21,-353",
     Train = "598,47,-113"
 }
@@ -232,23 +229,16 @@ player.Chatted:Connect(function(msg)
         msg = string.split(msg," ")
         if msg[1] == baseprefix then
             if msg[2] == "cashcounter" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/CashCounterScript.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ZyscoXD/lolctrl/main/cash"))()
             elseif msg[2] == "gui" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/AltControlSellerGuiPackage.lua"))()
-            elseif msg[2] == "fly" then
-                getgenv().FLYMODE = "Default"
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/open_sources/freefly.lua"))()
-            elseif msg[2] == "chatspy" then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error502/main/Packages/DaHood/AltControl/AltControlChatSpy.lua"))()
+                loadstring(game:HttpGet(""))()
             elseif msg[2] == "place" then
                 local function BreakCFrame(cords)
                     local pos = OperatorPos[cords]
                     local x,y,z = string.split(pos,",")[1],string.split(pos,",")[2],string.split(pos,",")[3]
                     player.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
                 end
-                if msg[3] == "admin" then
-                    BreakCFrame("Admin")
-                elseif msg[3] == "bank" then
+                if msg[3] == "bank" then
                     BreakCFrame("Bank")
                 elseif msg[3] == "train" then
                     BreakCFrame("Train")
@@ -347,36 +337,120 @@ local function cmds(msg,plr)
                 return
             end
             if player.UserId == Alts[1] then
-                local success, err = pcall(function()
-                    function TotalAlts()local a=0;for b,c in pairs(Alts)do a=a+1 end;return a end
-                    function OnlineAlts()local a=0;function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a+1 end end;return a end
-                    function GetPing()local a=game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()local b=string.split(a,'(')local c=tonumber(b[1])c=tonumber(string.format("%.0f",c))return c end
-                    function GetDropped()local a=0;for b,c in pairs(game.Workspace.Ignored.Drop:GetChildren())do if c.Name=="MoneyDrop"and c:IsA("Part")then local d=c:FindFirstChild("BillboardGui"):FindFirstChild("TextLabel").Text;if d then d=d:gsub("%,","")d=d:gsub("%$","")a=a+tonumber(d)end end end;return a end
-                    function ListOnlineAlts()local a=""function CheckPlr(b)for c,d in pairs(game.Players:GetChildren())do if d.UserId==b then return true end end;return false end;for c,d in pairs(Alts)do if CheckPlr(d)==true then a=a..""..game.Players:GetPlayerByUserId(d).Name.."\n"end end;if a==""then return"None"end;return a end
-                    function getCashPot()local a=0;for b,c in pairs(game.Players:GetChildren())do if not game.Workspace.Players:FindFirstChild(c.Name)then repeat wait()until game.Workspace.Players:FindFirstChild(c.Name)end;a=a+c.DataFolder.Currency.Value end;return a end
-                    local WebMsg = "**Operator: "..game.Players:GetPlayerByUserId(Settings['Operator'][1]).Name.."\nPredropped: $"..formatnum(GetDropped()).."\nCash Pot: $"..formatnum(getCashPot()).."\nPing: "..GetPing().."ms\n\nAlts ["..OnlineAlts().."/"..TotalAlts().."]:\n"..ListOnlineAlts().."**"
-                    request = HttpPost or request or http_request or syn.request
-                    request({
-                        Url = Settings['WebhookURL'],
-                        Body = game:GetService("HttpService"):JSONEncode({
-                            content = "",
-                            embeds = {
-                                {
-                                    ['title'] = "Encrypt Alt Control!",
-                                    ['description'] = WebMsg,
-                                    ['color'] = tonumber(0x6c00bd)
-                                }
-                            }
-                        }),
-                        Method = "POST",
-                        Headers = {
-                            ["content-type"] = "application/json"
+                function TotalAlts()
+                    local a = 0
+                    for b, c in pairs(Alts) do
+                        a = a + 1
+                    end
+                    return a
+                end
+            
+                function OnlineAlts()
+                    local a = 0
+                    function CheckPlr(b)
+                        for c, d in pairs(game.Players:GetChildren()) do
+                            if d.UserId == b then
+                                return true
+                            end
+                        end
+                        return false
+                    end
+            
+                    for c, d in pairs(Alts) do
+                        if CheckPlr(d) == true then
+                            a = a + 1
+                        end
+                    end
+                    return a
+                end
+            
+                function GetDropped()
+                    local a = 0
+                    for b, c in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+                        if c.Name == "MoneyDrop" and c:IsA("Part") then
+                            local d = c:FindFirstChild("BillboardGui"):FindFirstChild("TextLabel").Text
+                            if d then
+                                d = d:gsub("%,", "")
+                                d = d:gsub("%$", "")
+                                a = a + tonumber(d)
+                            end
+                        end
+                    end
+                    return a
+                end
+            
+                function ListOnlineAlts()
+                    local a = ""
+                    function CheckPlr(b)
+                        for c, d in pairs(game.Players:GetChildren()) do
+                            if d.UserId == b then
+                                return true
+                            end
+                        end
+                        return false
+                    end
+            
+                    for c, d in pairs(Alts) do
+                        if CheckPlr(d) == true then
+                            a = a .. "" .. game.Players:GetPlayerByUserId(d).Name .. "\n"
+                        end
+                    end
+            
+                    if a == "" then
+                        return "None"
+                    end
+                    return a
+                end
+            
+                function getCashPot()
+                    local a = 0
+                    for b, c in pairs(game.Players:GetChildren()) do
+                        if not game.Workspace.Players:FindFirstChild(c.Name) then
+                            repeat
+                                wait()
+                            until game.Workspace.Players:FindFirstChild(c.Name)
+                        end
+                        a = a + c.DataFolder.Currency.Value
+                    end
+                    return a
+                end
+            
+                local WebMsg = "**Operator: " .. game.Players:GetPlayerByUserId(Settings['Operator'][1]).Name .. "\nPredropped: $" .. formatnum(GetDropped()) .. "\nCash Pot: $" .. formatnum(getCashPot()) .. "ms\n\nAlts [" .. OnlineAlts() .. "/" .. TotalAlts() .. "]:\n" .. ListOnlineAlts() .. "**"
+                
+                local data = {
+                    content = "",
+                    embeds = {
+                        {
+                            ['title'] = "CMD.TOOLS Info!",
+                            ['description'] = WebMsg,
+                            ['color'] = tonumber(0x0f00bd)
                         }
+                    }
+                }
+                
+                local wh = Settings['WebhookURL']
+            
+                if request then
+                    local response = request({
+                        Url = wh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
                     })
-                end)
-                saymsg("Sent!")
+                elseif http_request then
+                    local response = http_request({
+                        Url = wh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    })
+                end
             end
-        end
+        end                               
         msg = string.split(msg," ")
         msg[1] = string.lower(msg[1])
         if not IsAOperator then
@@ -412,11 +486,7 @@ local function cmds(msg,plr)
                         player.Character.HumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.CFrame.X-math.random(5,10),player.Character.HumanoidRootPart.CFrame.Y,player.Character.HumanoidRootPart.CFrame.Z-math.random(5,10))
                     end
                 end
-                if string.lower(msg[2]) == "admin" then
-                    SetupPlace('Admin')
-                elseif string.lower(msg[2]) == 'admin2' then
-                    SetupPlace('Admin2')
-                elseif string.lower(msg[2]) == 'bank' then
+                if string.lower(msg[2]) == 'bank' then
                     SetupPlace('Bank')
                 elseif string.lower(msg[2]) == 'jailyard' then
                     SetupPlace('Jailyard')
@@ -475,7 +545,7 @@ local function cmds(msg,plr)
                     IngameSettings['advertisement'] = true
                     while IngameSettings['advertisement'] == true do
                         if Settings['AdMsg'] == "" or Settings['AdMsg'] == nil then
-                            Settings['AdMsg'] = "discord.gg/encrypt"
+                            Settings['AdMsg'] = "discord.gg/cmd"
                         end
                         saymsg(Settings['AdMsg'])
                         wait(Settings['AdDelay'])
@@ -499,7 +569,7 @@ local function cmds(msg,plr)
             elseif msg[1] == Settings['Prefix'].."airlock" then
                 if string.lower(msg[2]) == "on" then
                     local PartName = "FloatingPart"
-                    local FolderName = "Encrypt"
+                    local FolderName = "CMD"
                     if not workspace:FindFirstChild(FolderName) then
                         local Folder = Instance.new("Folder",workspace)
                         Folder.Name = FolderName
@@ -513,11 +583,11 @@ local function cmds(msg,plr)
                     Part.Name = PartName
                     Part.Transparency = 1
                     Part.Size = Vector3.new(15,1,15)
-                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+7,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    Part.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                     Part.Anchored = true
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+9,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y+5,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
                 elseif string.lower(msg[2]) == "off" then
-                    for i,v in pairs(workspace['Encrypt']:GetChildren()) do
+                    for i,v in pairs(workspace['CMD']:GetChildren()) do
                         if v.Name == 'FloatingPart' then
                             v:Destroy()
                         end
@@ -609,18 +679,6 @@ local function cmds(msg,plr)
                         player.Backpack:FindFirstChild("Mask").Parent = player.Character
                         player.Character:FindFirstChild("Mask"):Activate()
                         player.Character:FindFirstChild("Mask").Parent = player.Backpack
-                    end
-                end
-            elseif msg[1] == Settings['Prefix'].."crash" then
-                if string.lower(msg[2]) == "encrypt" then
-                    if player.UserId == Alts[1] or player.UserId == Alts[2] or player.UserId == Alts[3] then
-                        setfpscap(60)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dahoodcrasher.lua"))()
-                    end
-                elseif string.lower(msg[2]) == "swag" then
-                    if player.UserId == Alts[1] or player.UserId == Alts[2] or player.UserId == Alts[3] then
-                        setfpscap(60)
-                        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
                     end
                 end
             elseif msg[1] == Settings['Prefix'].."hide" then
